@@ -1,0 +1,6 @@
+BAR_HEIGHT='25'
+
+BASE_COLOR="#ff002b36"
+WHITE="#ffffffff"
+ACCENT_COLOR="#ff268bd2"
+ALERT_COLOR="#ffcb4b16"
