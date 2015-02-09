@@ -17,6 +17,18 @@ alias pfind='ps -aux | grep $1'
 alias opn='xdg-open'
 alias off='xset dpms force off'
 
+# Git log commands courtesy of Jake Zimmerman
+# pretty Git log
+alias gl='git log --graph --pretty="%C(bold green)%h%Creset%C(auto)%d%Creset %s"'
+# pretty Git log, all references
+alias gll='gl --all'
+# pretty Git log, show authors
+alias gla='git log --graph --pretty="%C(bold green)%h%Creset %C(yellow)%an%Creset%C(auto)%d%Creset %s"'
+# pretty Git log, all references, show authors
+alias glla='gla --all'
+
+
+
 export PS1='\e[0;34m\u\e[m::\e[1;36m\W\e[m\$ '
 
 # Colors:

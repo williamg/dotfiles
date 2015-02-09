@@ -2,3 +2,9 @@
 	email = william.ganucheau@gmail.com
 [core]
 	editor = vim
+
+[color "decorate"]
+	head = bold white
+	branch = bold magenta
+	remotebranch = blue
+	tag = bold red

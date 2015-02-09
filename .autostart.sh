@@ -21,7 +21,7 @@ nitrogen --restore &
 
 xflux -z 15201 &
 
-box-sync start &
+~/.dropbox-dist/dropboxd &
 
 # Launch panel
 /home/william/.config/bspwm/panel/panel.sh &

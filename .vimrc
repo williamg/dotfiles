@@ -26,7 +26,7 @@ set listchars=tab:\→\ ,eol:¶,trail:~
 filetype plugin indent on
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.ino set filetype=c
-au Filetype python set sw=4 sts=4 et
+au BufRead,BufNewFile *.py set expandtab
 
 " More personal stuff
 let mapleader = ","
