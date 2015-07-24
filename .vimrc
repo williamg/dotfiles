@@ -3,7 +3,7 @@ execute pathogen#infect()
 " Basic stuff
 syntax on
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 set autoread
 
 set number
@@ -13,7 +13,6 @@ set tabstop		=4
 set shiftwidth	=4
 set softtabstop	=4
 set colorcolumn	=80
-set noexpandtab
 set smarttab
 set autoindent
 
@@ -21,12 +20,15 @@ set incsearch
 set showmatch
 set hlsearch
 set list 
-set listchars=tab:\→\ ,eol:¶,trail:~
+set listchars=tab:\>\ ,eol:¶,trail:~
+set cursorline
 
 filetype plugin indent on
-au BufRead,BufNewFile *.md set filetype=markdown
+au BufRead,BufNewFile *.md set filetype=markdown set spell spellang=en_us
 au BufRead,BufNewFile *.ino set filetype=c
 au BufRead,BufNewFile *.py set expandtab
+
+au BufRead,BufNewFile *.rs, set filetype=rust ts=4 sw=4 softtabstop=4 expandtab
 
 " More personal stuff
 let mapleader = ","

@@ -1,5 +1,6 @@
 [user]
-	email = william.ganucheau@gmail.com
+	email = williamg.online@gmail.com
+	name = William Ganucheau
 [core]
 	editor = vim
 
@@ -8,3 +9,5 @@
 	branch = bold magenta
 	remotebranch = blue
 	tag = bold red
+[credential]
+	helper = cache --timeout=3600

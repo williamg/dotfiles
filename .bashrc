@@ -2,8 +2,6 @@
 # ~/.bashrc
 #
 
-PATH="/data/documents/programming/sources/box-linux-sync/bin:~/.config/bspwm/panel/:~/.gem/ruby/2.1.0/bin:~/bin/:$PATH"
-
 PYTHONPATH="${PYTHONPATH}:/usr/lib/python/"
 export PYTHONPATH
 
@@ -15,7 +13,8 @@ alias ls='ls --color=auto'
 alias get='sudo apt-get install'
 alias pfind='ps -aux | grep $1'
 alias opn='xdg-open'
-alias off='xset dpms force off'
+alias off='sleep 1; xset dpms force off'
+alias ack='ack-grep'
 
 # Git log commands courtesy of Jake Zimmerman
 # pretty Git log
@@ -27,10 +26,18 @@ alias gla='git log --graph --pretty="%C(bold green)%h%Creset %C(yellow)%an%Crese
 # pretty Git log, all references, show authors
 alias glla='gla --all'
 
+alias myip="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"
 
 
-export PS1='\e[0;34m\u\e[m::\e[1;36m\W\e[m\$ '
+
+export PS1='\e[0;32m\u\e[m::\e[1;34m\W\e[m\$ '
 
 # Colors:
 export TERM=xterm-256color
-eval `dircolors ~/.dir_colors`
+. ~/.gruvbox_colors
+
+export NVM_DIR="/home/william/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Pkg config
+export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig
