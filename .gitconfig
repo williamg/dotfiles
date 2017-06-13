@@ -2,7 +2,7 @@
 	email = williamg.online@gmail.com
 	name = William Ganucheau
 [core]
-	editor = vim
+	editor = nvim
 
 [color "decorate"]
 	head = bold white

@@ -20,7 +20,7 @@ bspc config presel_border_color     "#b8bb26"
 
 
 bspc monitor DVI-I-1 -d 1 2 3 4 5
-bspc monitor DVI-D-0 -d 6 7 8 9 10
+bspc monitor DVI-D-0 -d 6 7 8 9 0
 
 # Reload automatically
 if [ -e "$BSPWM_TREE" ] ; then

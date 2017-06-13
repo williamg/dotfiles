@@ -16,6 +16,9 @@ set colorcolumn	=80
 set smarttab
 set autoindent
 
+" For autolab
+set expandtab 
+
 set incsearch
 set showmatch
 set hlsearch
@@ -27,6 +30,9 @@ filetype plugin indent on
 au BufRead,BufNewFile *.md set filetype=markdown set spell spellang=en_us
 au BufRead,BufNewFile *.ino set filetype=c
 au BufRead,BufNewFile *.py set expandtab
+au BufRead,BufNewFile *.rs, set filetype=rust ts=4 sw=4 softtabstop=4 expandtab
+
+let g:typescript_indent_disable = 1
 
 au BufRead,BufNewFile *.rs, set filetype=rust ts=4 sw=4 softtabstop=4 expandtab
 
@@ -63,6 +69,11 @@ noremap     <Up>    <NOP>
 noremap     <Down>  <NOP>
 noremap     <Left>  <NOP>
 noremap     <Right> <NOP>
+
+" NERDTree
+let NERDTreeIgnore=['\.o$', '\.dep$']
+noremap <leader>t :NERDTreeMirrorToggle<CR>
+noremap <leader>h :NerdTreeSteppedOpen<CR>
 
 " Javascript code analyzer
 map <C-f> <Esc>:TernRefs<CR>

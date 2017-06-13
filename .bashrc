@@ -10,7 +10,7 @@ export PYTHONPATH
 
 # Aliases
 alias ls='ls --color=auto'
-alias get='sudo apt-get install'
+alias get='sudo yum install'
 alias pfind='ps -aux | grep $1'
 alias opn='xdg-open'
 alias off='sleep 1; xset dpms force off'
